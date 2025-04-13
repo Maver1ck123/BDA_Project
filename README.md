@@ -27,26 +27,10 @@ pip install pyspark findspark nltk textblob matplotlib plotly pandas numpy sciki
 
 ## How to Run
 1. Clone this repository:
-git clone https://github.com/Maver1ck123/BDA_Project
-cd realtime-sentiment-analysis
+- git clone https://github.com/Maver1ck123/BDA_Project
+- cd realtime-sentiment-analysis
 2. Open the project in Google Colab or a local Jupyter Notebook.
-3. Run the script `main.py` or execute the code cells in sequence.
-
-## Example Usage
-The following snippet demonstrates how to start the application:
-from kafka_based_sentiment_analysis import KafkaBasedSentimentAnalysisApp
-
-app = KafkaBasedSentimentAnalysisApp(batch_size=5, delay=2, method="vader")
-app.start()
-
-try:
-print("Application running. Press Ctrl+C to stop.")
-time.sleep(60)
-except KeyboardInterrupt:
-pass
-
-app.stop()
-app.save_results("sentiment_results.json")
+3. Execute the code cell.
 
 ## Results
 The system provides:
